@@ -44,6 +44,11 @@ public class EmployeeController {
 	public Employee createEmployee(@Valid @RequestBody Employee employee) {
 		return employeeRepository.save(employee);
 	}
+	
+	@@RequestMapping("/welcome")
+	public String getwelome() {
+		return "welcome to spring boot";
+	}
 
 	@PutMapping("/employees/{id}")
 	public ResponseEntity<Employee> updateEmployee(@PathVariable(value = "id") Long employeeId,
