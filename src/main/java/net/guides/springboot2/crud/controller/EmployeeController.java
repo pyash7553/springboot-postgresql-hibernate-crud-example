@@ -47,7 +47,7 @@ public class EmployeeController {
 	
 	@RequestMapping("/welcome")
 	public String getwelome() {
-		return "welcome to spring boot";
+		return "updated welcome to spring boot";
 	}
 
 	@PutMapping("/employees/{id}")
