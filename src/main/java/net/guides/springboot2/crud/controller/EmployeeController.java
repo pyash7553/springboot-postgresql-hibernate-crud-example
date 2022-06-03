@@ -45,7 +45,7 @@ public class EmployeeController {
 		return employeeRepository.save(employee);
 	}
 	
-	@@RequestMapping("/welcome")
+	@RequestMapping("/welcome")
 	public String getwelome() {
 		return "welcome to spring boot";
 	}
